@@ -1,0 +1,159 @@
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;/*margem interna para cima e para baixo, o zero e para direita e esquerda*/
+}
+.caixa{
+    position: relative;/*se move em relacao a outra referencia, no caso minha div*/
+    width: 940px;/*largura da caixa*/
+    margin: 0 auto;/*significa que ocupara todo tamanho definido para caixa*/ 
+}
+
+nav {
+    position: absolute;/*esta a frente, outros podem ficar atras*/
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+        
+}
+
+nav a {
+    text-transform: uppercase;/*transforma o texto em maiusculo*/
+    color: #000000;
+    font-weight: bold;/*fonte incorpada*/
+    font-size: 22px;/*tamanho da fonte*/
+    text-decoration: none;/*tipos de decoraçao do texto, aqui tirei a decoraçao*/
+
+}
+
+nav a:hover{/* faz marcar quando passa o mouse por cima, vai marcar com a cor ai de baixo, e com o 
+    text decoration sublinhado*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*Margem interna para desgrudar da borda*/
+}
+
+.produtos li {
+    display: inline-block ;/*exibe a largura do seu conteudo, e podemos alterar o tamanho*/
+    text-align: center;/*para centralizar o conteudo dentro do seu espaço*/
+    /*background: #cccccc; #coloca a cor de fundo pra visualizar no html*/
+    width: 30%;/*define o tanto que o elemento vai ocupar referente a largura da pagina*/
+    vertical-align: top;/*por padrão o alinhamento do conteudo é em baixo, aqui digo que será no topo*/    
+    margin: 0 1.5%;/*para criar o espaçamento entre os itens*/
+    padding: 30px 20px;/*espaçamento interno, para descolar das bordas*/
+    box-sizing: border-box;/*para o espaçamento lateral estar dentro dos 30% e nao quebrar a linha, assim o passing ficara dentro dos 30%*/
+    border-color: #000000;/*definição de cor hexadecimal*/
+    border-width: 2px;/*Largura da borda*/
+    border-style: solid;/*estilo da borda*/
+    /*ao inves de usar os 3 itens acima podemos dizer border: 2px solid #000000, para facilitar*/
+    border-radius: 10px;
+
+}
+
+.produtos li:hover{/*aqui quando o mouse tocar somente a cor da borda ira mudar, border-color*/
+    border-color: #c78c19;
+    
+}
+
+.produtos li:active{ /*quando o click do mouse estiver ativo*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{ /*alterará o tamanho da letra ao passar o mouse*/
+    font-size: 34px;
+}
+.produtos h2{
+    font-size: 30px;/*Tamanho da fonte no H2 dentro de produtos*/
+    font-weight: bold;/*Fonte em negrito*/
+}
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*mesma coisa que por margin-top: 10px*/
+}
+
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;    
+}
+
+.copyright{
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    display: block;
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) rotate(35deg)
+    
+    
+}
+
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
